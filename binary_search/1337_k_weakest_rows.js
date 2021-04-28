@@ -4,8 +4,8 @@ const kWeakestRows = function(mat, k) {
     }
     let newMat = mat.map((item, idx) => {
         let left = 0;
-        let right = item.length - 1;
-        while(left <= right) {
+        let right = item.length;
+        while(left < right) {
             let mid = Math.floor(left + (right - left) / 2);
             if (item[mid] === 1 && (item[mid + 1] === 0 || item[mid + 1] === undefined)) {
                 return [idx, mid + 1];
