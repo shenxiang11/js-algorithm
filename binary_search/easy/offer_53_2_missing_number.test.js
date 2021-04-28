@@ -1,4 +1,4 @@
-import missingNumber from './offer_2_missing_number';
+import missingNumber from './offer_53_2_missing_number';
 
 test('missingNumber:1', () => {
     expect(missingNumber([0, 1, 3])).toBe(2);
