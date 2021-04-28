@@ -1,4 +1,4 @@
-const sqrt = (n) => {
+const mySqrt = (n) => {
     let start = 0;
     let end = n;
     while (start < end) {
@@ -15,4 +15,4 @@ const sqrt = (n) => {
     return start;
 }
 
-export default sqrt;
+export default mySqrt;
