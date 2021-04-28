@@ -1,4 +1,4 @@
-// TODO: 二分法
+// TODO: 使用二分法
 
 const isSubsequence = function(s, t) {
     for (let sc of s) {
