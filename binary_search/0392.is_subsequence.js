@@ -1,3 +1,5 @@
+// TODO: 二分法
+
 const isSubsequence = function(s, t) {
     for (let sc of s) {
         let idx = t.indexOf(sc);
