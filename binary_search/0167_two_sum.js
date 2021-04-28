@@ -4,7 +4,6 @@ const twoSum = (numbers, target) => {
         let right = numbers.length - 1;
         while (left <= right) {
             let mid = Math.floor(left + (right - left) / 2);
-            console.log(left, right, mid);
             if (target - numbers[mid] === numbers[i]) {
                 return [i + 1, mid + 1];
             } else if (target - numbers[mid] < numbers[i]) {
