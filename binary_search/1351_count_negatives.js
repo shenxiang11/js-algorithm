@@ -4,9 +4,22 @@ const countNegatives = function(grid) {
     }
     let count = 0;
     for (let i = 0; i < grid.length; i++) {
-        let idx = grid[i].findIndex(i => i < 0); // 二分查找找到第一个负数，转化单调递减的数组找第一个负数的问题
-        if (idx != -1) {
-            count += grid[i].length - idx;
+        if (grid[i][0] < 0) {
+            count += grid[i].length;
+        } else {
+            let left = 0;
+            let right = grid[i].length;
+            while(left < right) {
+                let mid = Math.floor(left + (right - left) / 2);
+                if (grid[i][mid] >= 0 && (grid[i][mid + 1] < 0)) {
+                    count += grid[i].length - 1 - mid;
+                    break;
+                } else if (grid[i][mid] < 0) {
+                    right = mid;
+                } else {
+                    left = mid + 1;
+                }
+            }
         }
     }
     return count;
