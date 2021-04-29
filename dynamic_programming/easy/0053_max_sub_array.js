@@ -1,13 +1,9 @@
-// TODO: 目前性能差
-
 const maxSubArray = function(nums) {
-    let max = -Infinity;
+    let max = nums[0];
+    let prev = 0;
     for (let i = 0, len = nums.length; i < len; i++) {
-        let arr = [nums[i]];
-        for (let j = i + 1; j < len; j++) {
-            arr[j - i] = arr[j - i - 1] + nums[j];
-        }
-        max = Math.max(...arr, max);
+        prev = Math.max(prev + nums[i], nums[i]);
+        max = Math.max(max, prev);
     }
     return max;
 };
