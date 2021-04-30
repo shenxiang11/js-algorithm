@@ -1,6 +1,5 @@
 import isValid from './0020_is_valid';
 
-
 test('maxSubArray:1', () => {
     expect(isValid("()")).toBe(true);
 });
