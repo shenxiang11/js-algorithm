@@ -7,3 +7,7 @@ test('majorityElement:1', () => {
 test('majorityElement:2', () => {
     expect(majorityElement([2, 2, 1, 1, 1, 2, 2])).toBe(2);
 });
+
+test('majorityElement:3', () => {
+    expect(majorityElement([2, 2, 1, 1])).toBe(undefined);
+});

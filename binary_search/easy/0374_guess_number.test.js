@@ -38,3 +38,9 @@ test('guessNumber:5', () => {
 
     expect(guessNumber(1)).toBe(1);
 });
+
+test('guessNumber:6', () => {
+    globalThis.guess = jest.fn().mockImplementation(createGuess(99));
+    expect(guessNumber(100)).toBe(99);
+});
+
