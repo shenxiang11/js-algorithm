@@ -30,3 +30,8 @@ test('peakIndexInMountainArray:4', () => {
         [-1]
     ])).toBe(1);
 });
+
+
+test('peakIndexInMountainArray:5', () => {
+    expect(countNegatives()).toBe(0);
+});

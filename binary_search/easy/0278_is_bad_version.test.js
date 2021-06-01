@@ -7,3 +7,7 @@ const mockIsBadVersion = jest.fn().mockImplementation(version => {
 test('isBadVersion:1', () => {
     expect(solution(mockIsBadVersion)(5)).toBe(4);
 });
+
+test('isBadVersion:2', () => {
+    expect(solution(mockIsBadVersion)(-1)).toBe(-1);
+});

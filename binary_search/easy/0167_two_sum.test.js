@@ -11,3 +11,8 @@ test('twoSum:2', () => {
 test('twoSum:3', () => {
     expect(twoSum([-1, 0], -1)).toEqual([1, 2]);
 });
+
+test('twoSum:4', () => {
+    expect(twoSum([], -1)).toEqual([-1, -1]);
+});
+

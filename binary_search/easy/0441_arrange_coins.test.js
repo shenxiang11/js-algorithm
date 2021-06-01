@@ -7,3 +7,7 @@ test('arrangeCoins:1', () => {
 test('arrangeCoins:2', () => {
     expect(arrangeCoins(8)).toBe(3);
 });
+
+test('arrangeCoins:3', () => {
+    expect(arrangeCoins(0)).toBe(0);
+});

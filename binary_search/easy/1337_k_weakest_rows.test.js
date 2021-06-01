@@ -26,3 +26,11 @@ test('kWeakestRows:3', () => {
         [1, 0]
     ], 2)).toEqual([1, 0]);
 });
+
+test('kWeakestRows:4', () => {
+    expect(kWeakestRows([
+        [1, 0],
+        [0, 0],
+        [1, 0]
+    ])).toEqual([]);
+});

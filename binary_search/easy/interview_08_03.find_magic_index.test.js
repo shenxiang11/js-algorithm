@@ -12,3 +12,7 @@ test('findMagicIndex:2', () => {
 test('findMagicIndex:3', () => {
     expect(findMagicIndex([0, 0, 2])).toBe(0);
 });
+
+test('findMagicIndex:4', () => {
+    expect(findMagicIndex([1])).toBe(-1);
+});
